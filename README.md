@@ -1,37 +1,44 @@
-# Onebyone — Technical Research Implementation
+# Onebyone
+
+![Category](https://img.shields.io/badge/Category-Python%20Project-blue)
+
+> Modular Architecture: Investigating the benefits of component isolation in onebyone.
+
+## Overview
 
 One-By-One is a minimalist, high-performance Flask tracking server designed for orchestrating and logging request telemetry. It provides a specialized `/track` endpoint for capturing granular details (IP, User-Agent, Referer, and custom query arguments) from web interactions or tracking pixels.
 
-## Concepts & Architecture
+## Core Concepts
 
-This project focuses on the modular implementation of onebyone, emphasizing clean separation of concerns and maintainable pattern design.
 
-```mermaid
-graph TD
-    User([User]) -->|Interacts| UI[Onebyone System]
-    UI -->|Logic| Core[Core Logic]
-    Core -->|Data| Store[Data Store]
+
+
+- **Primary language/artifacts**: Python.
+- **Key directories**: `venv/`.
+- **Entry points**: `app.py`.
+- **Notes**: See `Repository Layout` for the main modules and entry points.
+
+## Technology Stack
+
+
+- **Root**: Python
+
+## Getting Started
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
-## Technical Implementation
+## Repository Layout
 
-### Core Technology Stack
-| Layer | Technology | Purpose |
-| :--- | :--- | :--- |
-| **Language** | Python | Data processing & scripting |
-| **Runtime** | Python 3.x | backend execution environment |
+- `venv/`
 
+## Configuration
 
-### Key Modules
-- **`src/`**: The primary source code directory.
+No required environment variables were detected (no `.env*.example` found).
 
+## Notes
 
-## Core Research Pillars
-
-- **Modular Architecture**: Investigating the benefits of component isolation in onebyone.
-- **Performance Optimization**: Researching key bottlenecks in the execution pipeline.
-
-## Future Research & Ideas
-
-- **Test Coverage**: Expanding the unit test suite to cover edge cases.
-- **Feature Expansion**: Integrating additional modular capabilities.
+- Keep this README factual and repository-grounded.
